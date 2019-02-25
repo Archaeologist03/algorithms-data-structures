@@ -3,6 +3,33 @@
 
 
 
+// ---------------- ****************************** ------------------------ 
+
+
+
+// Andrei course - google question - recuringItem (my impl)
+
+// const array = [1, 2, 3, 4, 11, 11, 33, 2, 6, 9];
+
+// function findRecuringItem(arr) {
+//   const objHolder = {};
+
+//   for (item of arr) {
+//     if (!objHolder[item]) {
+//       objHolder[item] = 1
+//     }
+//     else if (objHolder[item]) {
+//       return item;
+//     }
+//   }
+// }
+
+// findRecuringItem(array);
+
+
+
+
+
 
 // ---------------- ****************************** ------------------------ 
 
