@@ -4,6 +4,324 @@
 
 
 
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+
+// function isPangram(string){
+// let alphabet = [...Array(26).keys()].map(i => String.fromCharCode(i + 97));
+// let counter = 0;
+
+// let splited = string.toLowerCase().split("");
+// alphabet.forEach(el => {
+//   for (let i = 0; i < splited.length; i++) {
+//     if(el === splited[i]){
+//       counter++;
+//       break;
+//     }
+//   }
+// });
+
+
+// }
+
+
+// var string = "The quick brown fox jumps over the lazy dog."
+
+
+// isPangram(string);
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+
+// function solution(string) {
+//     let newStr = string.split("");
+
+//     for(let i = 0; i < newStr.length; i++) {
+//         newStr[i].match(/[A-Z]/) ? newStr[i] = ` ${newStr[i]}` : false;
+//     }
+//     return newStr.join("")
+// }
+//         // char.match(/[A-Z]/) ? char.replace(/[A-Z]/ , (" " + char)) : false;
+
+
+//     // let upperChar = string.match(/[A-Z]/g);
+//     // let replaced = string.replace(/[A-Z]/g, " -").split(" ")
+
+//     // let splited = string.split(/[A-Z]/);
+    
+//     // // upperChar.forEach(el => ind.push(string.indexOf(el))); 
+//     // let newArr = [];
+
+//     // // replaced.forEach(el => el[0] === "-" ? el[0] =  )
+//     // let filtered1 = replaced.filter(el => el[0] === "-");
+//     // let filtered2 = replaced.filter(el => el[0] !== "-")
+//     // // let mapped = filtered.map((el, i) => el[0] = upperChar[i]);
+//     // console.log(filtered2)
+
+// solution('camelCasingRacing')
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+// var sum_pairs=function(ints, s){
+//     let arr = [];
+//     let pair = [];
+
+//     for (let i = 0; i < ints.length; i++) {
+//         if (arr[0] === undefined) {
+//             arr.push(ints[i]); 
+//         }
+//         else {
+//             let filtred = arr.filter(el => el + ints[i] === s);
+//             filtred[0] === undefined ? arr.push(ints[i]) : pair = [filtred[0], ints[i]];
+//             if (pair[0] !== undefined) return pair;
+//         }
+//     }
+
+// }
+
+// sum_pairs([10, 5, 2, 3, 7, 5],         10)
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+
+// function scramble(str1, str2) {
+//   const obj1 = {};
+//   const obj2 = {};
+//   let counter = 0;
+
+//   str1.split("").forEach(char => obj1.hasOwnProperty(char) ? obj1[char]++ : obj1[char] = 1);
+//   str2.split("").forEach(char => obj2.hasOwnProperty(char) ? obj2[char]++ : obj2[char] = 1);
+
+//   for (let prop in obj2) {
+//     if (obj1.hasOwnProperty(prop) && obj1[prop] > 0) {
+//       counter += obj2[prop];
+//       obj1[prop] -= obj2[prop];
+//     }
+//   }
+//       console.log(obj1);
+//       console.log(obj2);
+//       console.log(counter);
+
+
+//   return counter === str2.length ? true : false;
+
+// }
+
+
+// scramble('scriptjava','javascript')
+
+
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+
+
+// var uniqueInOrder = function (iterable) {
+//   let sorted = iterable.split("").sort();
+//   let temp;
+//   for (let i = 0; i < sorted.length; i++) {
+//     temp = sorted[i];
+//     if (temp === sorted[i + 1])
+
+//   }
+
+//   console.log(sorted)
+// }
+
+// uniqueInOrder('AAAABBBCCDAABBB')
+
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+
+// CodeWars alg (i think)
+
+// function formatDuration(seconds) {
+//   if (seconds === 0) return "now";
+
+//   let second;
+//   let minute;
+//   let hour;
+//   let day;
+//   let year;
+
+//   seconds < 60 ? second = seconds : false;
+//   if (seconds >= 60) {
+//     minute = Math.floor(seconds / 60);
+//     second = seconds - minute * 60;
+//   }
+//   if (minute >= 60) {
+//     hour = Math.floor(minute / 60);
+//     minute = minute - hour * 60;
+//   }
+//   if (hour >= 24) {
+//     day = Math.floor(hour / 24);
+//     hour = hour - day * 24;
+//   }
+//   if (day >= 365) {
+//     year = Math.floor(day / 365);
+//     day = day - year * 365;
+//   }
+
+//   const time = {
+//     year,
+//     day,
+//     hour,
+//     minute,
+//     second
+//   }
+//   let res = [];
+
+//   for (let prop in time) {
+//     if (time[prop]) {
+//       res.push(time[prop] > 1 ? `${time[prop]} ${[prop]}s` : `${time[prop]} ${[prop]}`);
+//     }
+//   }
+
+//   let string = "";
+
+//   res.forEach((el, i) => {
+//     if (res.length === 1) {
+//       string += el;
+//     }
+//     else if (i === res.length - 1) {
+//       string += `and ${el}`;
+//     }
+//     else if (i === res.length - 2) {
+//       string += `${el} `
+//     }
+//     else {
+//       string += `${el}, `
+//     }
+//   });
+
+//   return string;
+// }
+
+// formatDuration(0)
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+
+// function score(dice) {
+//   let counter = 0;
+//   const obj = {};
+//   dice.forEach(el => obj[el] ? obj[el]++ : obj[el] = 1);
+//   for (let prop in obj) {
+//     if (obj[prop] > 4) {
+//       obj[`second${prop}`] = 2;
+//       obj[prop] -= 2;
+//     } else if (obj[prop] > 3) {
+//       obj[`second${prop}`] = 1;
+//       obj[prop]--;
+//     }
+//   }
+
+//   console.log(obj);
+//   if (obj[1] === 3) counter += 1000;
+//   if (obj[6] === 3) counter += 600;
+//   if (obj[5] === 3) counter += 500;
+//   if (obj[4] === 3) counter += 400;
+//   if (obj[3] === 3) counter += 300;
+//   if (obj[2] === 3) counter += 200;
+//   if (obj.second1 === 2 || obj[1] === 2) counter += 200;
+//   if (obj.second5 === 2 || obj[5] === 2) counter += 100;
+//   if (obj[1] === 1 || obj.second1 === 1) counter += 100;
+//   if (obj[5] === 1 || obj.second5 === 1) counter += 50;
+
+//   return counter;
+
+// }
+
+// score([2, 2, 3, 2, 4])
+
+
+
+// //  Three 1's => 1000 points
+// //  Three 6's =>  600 points
+// //  Three 5's =>  500 points
+// //  Three 4's =>  400 points
+// //  Three 3's =>  300 points
+// //  Three 2's =>  200 points
+// //  One   1   =>  100 points
+// //  One   5   =>   50 point
+
+
+
+
+
+
+
+
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+
+// function narcissistic(value ) {
+//     let splited = value.toString().split("");
+
+//     let val =  splited.reduce((a, c) => a + Math.pow(Number(c), splited.length), 0);
+
+
+//     let baseValue = Math.log10(value);
+//     let baseVal = Math.log10(val);
+
+//     return baseValue < baseVal ? false : true ; 
+
+
+
+// }
+
+// narcissistic(153 );
+
+
 
 
 
@@ -29,6 +347,24 @@
 
 // solution("abcde");
 
+
+// ---------------- ****************************** ------------------------ 
+
+
+
+// function factorial(n){
+//   let arr = [];
+//   for (let i = 1; i <= n; i++) {
+//     arr.push(i);
+//   }
+//   let res = arr.reduce((a, c) => a * c);
+//   console.log(res);
+
+//   return `${res}`;
+// }
+
+
+// factorial(5);
 
 
 
