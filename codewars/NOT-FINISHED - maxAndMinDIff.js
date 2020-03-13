@@ -5,13 +5,9 @@ function maxAndMin(arr1, arr2) {
   const arr1Sorted = arr1.sort((a, b) => a - b);
 
   let maxDiff = Math.abs(arr1Sorted[0] - arr2Sorted[arr2Sorted.length - 1]);
-  let minDiff = Math.abs(arr1Sorted[arr1Sorted.length - 1] - arr2Sorted[0]);
-  console.log(minDiff);
+  let minDiff;
 
-  //   arr1.forEach(n => {
-  //     minDiff = Math.abs(n - arr2Sorted[arr2Sorted.length - 1]);
-  //     maxDiff = Math.abs(n - arr2Sorted[0]);
-  //   });
+  
 }
 
 maxAndMin([3, 10, 5], [20, 7, 15, 8]); //, [17,2])
