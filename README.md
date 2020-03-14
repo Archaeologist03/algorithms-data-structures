@@ -1,6 +1,6 @@
-## Algorithms and Data Structures practices - Codewards and Repl stuff
+## Algorithms and Data Structures practices - Codewars and Repl algorithms 
 
-Some of saved repl algorithms i did in the past. And some other random (there is no better place for them) stuff. Mostly Algs and data structures.
+#### Some of codewars algorithms, and some of repl algorithms and data-structure practices.
 
 ##### How to Use `repl-algs` file
 Uncomment specific part of code (algorithm) you want to run. (If needed call the function. eg `someFunction(someinput)` )
