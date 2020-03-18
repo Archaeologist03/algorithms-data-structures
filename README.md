@@ -9,4 +9,3 @@ Run: `node codewars/<filename>`
 1) Uncomment specific part of code (algorithm) you want to run. (If needed call the function. eg `someFunction(someinput)` )
 
 ###### `// ---------------- ****************************** ------------------------ ` is "boundary" between diffrent algorithms.
-
