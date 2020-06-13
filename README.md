@@ -1,11 +1,9 @@
-## Algorithms and Data Structures practices - Codewars and Repl algorithms 
+## Algorithms and Data Structures practices - Codewars
 
-#### Some of codewars algorithms, and some of repl algorithms and data-structure practices.
+#### Codewars folder usage:
+- Run in terminal: `node codewars/<filename>`
 
-##### How to Use `codewars files` file: 
-Run: `node codewars/<filename>`
+#### repl-algs usage:
+- Uncomment specific part of code (algorithm) you want to run. (If needed call the function. eg `someFunction(someinput)` )
 
-##### How to Use `repl-algs` file:
-1) Uncomment specific part of code (algorithm) you want to run. (If needed call the function. eg `someFunction(someinput)` )
 
-###### `// ---------------- ****************************** ------------------------ ` is "boundary" between diffrent algorithms.
