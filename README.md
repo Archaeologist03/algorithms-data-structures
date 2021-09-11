@@ -1,5 +1,8 @@
 ## Algorithms and Data Structures practices - Codewars
 
+[Codewars Profile](https://www.codewars.com/users/Archaeologist03)
+
+
 #### Codewars folder usage:
 - Run in terminal: `node codewars/[kyu folder name]/[filename]`
 
