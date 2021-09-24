@@ -5,7 +5,7 @@ const maxChar = (str) => {
 
   str.split('').forEach((char) => {
     if (!mapObj[char]) mapObj[char] = 1;
-    mapObj[char] = mapObj[char] + 1;
+    else mapObj[char] = mapObj[char] + 1;
   });
 
   for (const key in mapObj) {
